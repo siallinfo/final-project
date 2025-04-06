@@ -45,7 +45,6 @@ class Customer extends Model
 //            $imagePath = $request->file('image')->store('customers', 'public');
 //            $customer->image = 'storage/' . $imagePath;
         }
-
         $customer->name          = $request->name;
         $customer->email         = $request->email;
         $customer->mobile        = $request->mobile;
