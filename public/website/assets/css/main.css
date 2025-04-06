@@ -1,0 +1,126 @@
+.customer-profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-photo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes it round */
+    object-fit: cover;
+    border: 3px solid #ddd; /* Optional border */
+}
+
+.customer-name h6 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.setting__wrap__list__inner ul {
+    list-style: none;
+    padding: 0;
+}
+
+.setting__wrap__list__inner ul li {
+    margin-top: 10px;
+}
+
+.setting__wrap__list__inner ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blinking-text {
+    animation: blink 1s infinite;
+    color: red;
+}
+
+.pagination__wraper .active a {
+    background-color: #007bff; /* Blue color */
+    color: white; /* Text color when active */
+}
+
+.pagination__wraper .active a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: white;
+}
+@media print {
+    body {
+        visibility: hidden;
+    }
+    .invoice-box {
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    button {
+        display: none;
+    }
+}
+table {
+    page-break-inside: auto;
+}
+tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+}
+@media print {
+    .invoice-box, button {
+        display: block !important;
+    }
+}
+.sidebar__menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar__menu ul li {
+    position: relative;
+    padding: 10px;
+    background: #f8f9fa;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.sidebar__menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar__menu ul .submenu {
+    display: none;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+.sidebar__menu ul li:hover .submenu {
+    display: block;
+}
+
+.sidebar__menu ul .submenu li {
+    background: #fff;
+    padding: 8px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+}
+
+.sidebar__menu ul .submenu li a {
+    color: #007bff;
+}
+
+
+
+
+
